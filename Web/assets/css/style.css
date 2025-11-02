@@ -1,7 +1,19 @@
+/* ---------- Color Control And Direction ---------- */
+:root {
+    --primary-color: #4b2e19;
+    --secondary-color: #805261;
+    --white-background: white;
+    --on-primary: #42281a;
+    --input-border: #c2a89b;
+    --navbar-hover: #ffb3d9;
+    direction: rtl;
+}
+
 /* ---------- Whole Web ---------- */
 body {
+     
     font-family: 'Vazirmatn', sans-serif;
-    background-color: #805261;
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +23,7 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: var(--white-background);
     padding: 30px;
     width: 320px;
     border-radius: 12px;
@@ -28,14 +40,14 @@ h2,
 h3 {
     text-align: center;
     margin-bottom: 25px;
-    color: #4b2e19;
+    color: var(--primary-color);
 }
 
 label {
     display: block;
     margin-bottom: 6px;
     font-weight: bold;
-    color: #4b2e19;
+    color: var(--primary-color);
 }
 
 input,
@@ -43,7 +55,7 @@ textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 18px;
-    border: 1px solid #c2a89b;
+    border: 1px solid var(--input-border);
     border-radius: 6px;
     font-size: 14px;
 }
@@ -51,8 +63,8 @@ textarea {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #5a3724;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--white-background);
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -61,17 +73,17 @@ button {
 }
 
 button:hover {
-    background-color: #42281a;
+    background-color: var(--on-primary);
 }
 
 p {
     text-align: center;
     margin-top: 10px;
-    color: #4b2e19;
+    color: var(--primary-color);
 }
 
 a {
-    color: #5a3724;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -86,8 +98,8 @@ a:hover {
     right: 0;
     left: 0;
     height: 60px;
-    background: #4d2b1f;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--white-background);
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -114,7 +126,7 @@ a:hover {
 
 .nav-links a,
 .navbar .brand {
-    color: #ffe6f2;
+    color: var(--white-background);
     text-decoration: none;
     font-size: 14px;
     transition: color 0.5s;
@@ -123,5 +135,5 @@ a:hover {
 .nav-links a:hover,
 .nav-links a.active,
 .navbar .brand:hover {
-    color: #ffb3d9;
+    color: var(--navbar-hover);
 }
