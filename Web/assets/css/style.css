@@ -1,0 +1,127 @@
+/* ---------- Whole Web ---------- */
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background-color: #805261;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-top: 70px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: right;
+}
+
+blockquote {
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #4b2e19;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #4b2e19;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 18px;
+    border: 1px solid #c2a89b;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5a3724;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.5s;
+}
+
+button:hover {
+    background-color: #42281a;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+    color: #4b2e19;
+}
+
+a {
+    color: #5a3724;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 60px;
+    background: #4d2b1f;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 25px;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    gap: 25px;
+}
+
+
+
+.navbar .brand {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a,
+.navbar .brand {
+    color: #ffe6f2;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.5s;
+}
+
+.nav-links a:hover,
+.nav-links a.active,
+.navbar .brand:hover {
+    color: #ffb3d9;
+}
