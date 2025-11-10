@@ -1,19 +1,24 @@
+@import url(light.css);
+:root{
+ direction: rtl;   
+ --navbar-hover: #ffb3d9;
+}
+
 /* ---------- Color Control And Direction ---------- */
+/*
 :root {
-    --primary-color: #4b2e19;
-    --secondary-color: #805261;
+    --primary-color: rgb(75, 46, 25);
+    --secondary-color: #9b3b5d;
     --white-background: white;
     --on-primary: #42281a;
     --input-border: #c2a89b;
-    --navbar-hover: #ffb3d9;
-    direction: rtl;
 }
-
+*/
 /* ---------- Whole Web ---------- */
 body {
      
     font-family: 'Vazirmatn', sans-serif;
-    background-color: var(--secondary-color);
+    background-color: var(--md-sys-color-secondary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +28,7 @@ body {
 }
 
 .container {
-    background-color: var(--white-background);
+    background-color: var(--md-sys-color-surface-container-lowest);
     padding: 30px;
     width: 320px;
     border-radius: 12px;
@@ -40,14 +45,14 @@ h2,
 h3 {
     text-align: center;
     margin-bottom: 25px;
-    color: var(--primary-color);
+    color: var(--md-sys-color-primary);
 }
 
 label {
     display: block;
     margin-bottom: 6px;
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--md-sys-color-primary);
 }
 
 input,
@@ -55,17 +60,18 @@ textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 18px;
-    border: 1px solid var(--input-border);
+    border: 1px solid var(--md-sys-color-surface-variant);
     border-radius: 6px;
     font-size: 14px;
     box-sizing: border-box;
+    resize: vertical;
 }
 
 button {
     width: 100%;
     padding: 10px;
-    background-color: var(--primary-color);
-    color: var(--white-background);
+    background-color: var(--md-sys-color-primary);
+    color: var( --md-sys-color-surface-container-lowest);
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -74,17 +80,17 @@ button {
 }
 
 button:hover {
-    background-color: var(--on-primary);
+    background-color: var(--md-sys-color-on-primary);
 }
 
 p {
     text-align: center;
     margin-top: 10px;
-    color: var(--primary-color);
+    color: var(--md-sys-color-primary);
 }
 
 a {
-    color: var(--primary-color);
+    color: var(--md-sys-color-primary);
     text-decoration: none;
 }
 
@@ -99,8 +105,8 @@ a:hover {
     right: 0;
     left: 0;
     height: 60px;
-    background: var(--primary-color);
-    color: var(--white-background);
+    background: var(--md-sys-color-primary);
+    color: var(--md-sys-color-secondary);
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -127,7 +133,7 @@ a:hover {
 
 .nav-links a,
 .navbar .brand {
-    color: var(--white-background);
+    color: var(--md-sys-color-surface-container-lowest);
     text-decoration: none;
     font-size: 14px;
     transition: color 0.5s;
