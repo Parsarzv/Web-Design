@@ -1,7 +1,8 @@
 @import url(light.css);
-:root{
- direction: rtl;   
- --navbar-hover: #ffb3d9;
+
+:root {
+    direction: rtl;
+    --navbar-hover: #ffb3d9;
 }
 
 /* ---------- Color Control And Direction ---------- */
@@ -16,7 +17,7 @@
 */
 /* ---------- Whole Web ---------- */
 body {
-     
+
     font-family: 'Vazirmatn', sans-serif;
     background-color: var(--md-sys-color-secondary);
     display: flex;
@@ -50,10 +51,10 @@ h3 {
 }
 
 input[type="radio"] {
-display: inline-block;
-width: auto;    
+    display: inline-block;
+    width: auto;
 }
-    
+
 
 label {
     display: block;
@@ -74,11 +75,13 @@ textarea {
     resize: vertical;
 }
 
+/*
+
 button {
     width: 100%;
     padding: 10px;
     background-color: var(--md-sys-color-primary);
-    color: var( --md-sys-color-surface-container-lowest);
+    color: var(--md-sys-color-surface-container-lowest);
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -90,12 +93,7 @@ button:hover {
     background-color: var(--md-sys-color-on-primary);
 }
 
-p {
-    text-align: center;
-    margin-top: 10px;
-    color: var(--md-sys-color-primary);
-}
-
+*/
 a {
     color: var(--md-sys-color-primary);
     text-decoration: none;
@@ -103,6 +101,13 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+
+p {
+    text-align: center;
+    margin-top: 10px;
+    color: var(--md-sys-color-primary);
 }
 
 /* ---------- Navbar ---------- */
@@ -123,7 +128,7 @@ a:hover {
     gap: 25px;
 }
 
-.brand img{
+.brand img {
     height: 70px;
     width: auto;
     margin: auto;
@@ -132,7 +137,7 @@ a:hover {
 .navbar .brand {
     font-weight: bold;
     font-size: 18px;
-    
+
 }
 
 .nav-links {
@@ -155,4 +160,54 @@ a:hover {
 .nav-links a.active,
 .navbar .brand:hover {
     color: var(--navbar-hover);
+}
+
+/* ---------------------------- */
+/*   Primary Filled Button (Small)
+     Material 3 – Enabled State
+/* ---------------------------- */
+
+.btn-primary-filled {
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-surface-container-lowest);
+    width: 100%;
+    font-family: inherit;
+    font-size: 0.875rem;
+    /* small */
+    font-weight: 500;
+    line-height: 1.25rem;
+
+    padding: 6px 16px;
+    /* small size */
+    border-radius: 8px;
+    border: none;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover */
+.btn-primary-filled:hover {
+    background-color: color-mix(in srgb, var(--md-sys-color-primary) 90%, black);
+}
+
+/* Focus */
+.btn-primary-filled:focus {
+    outline: 2px solid var(--md-sys-color-outline);
+    outline-offset: 2px;
+}
+
+/* Disabled */
+.btn-primary-filled:disabled,
+.btn-primary-filled.disabled {
+    background-color: var(--md-sys-color-surface-container-high);
+    color: var(--md-sys-color-on-surface);
+    opacity: 0.38;
+    cursor: not-allowed;
 }
