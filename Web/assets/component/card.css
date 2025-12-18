@@ -1,0 +1,27 @@
+/* ===============================
+   Material Card Base
+================================ */
+.md-card {
+  border-radius: 16px;
+  padding: 16px;
+  background-color: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
+  transition: box-shadow 0.3s;
+}
+
+.md-card.filled {
+  background-color: var(--md-sys-color-surface-container);
+}
+
+.md-card.outlined {
+  background-color: var(--md-sys-color-surface);
+  border: 1px solid var(--md-sys-color-outline-variant);
+}
+
+.md-card.elevated {
+  background-color: var(--md-sys-color-surface-container-low);
+  box-shadow:
+    0 2px 4px rgba(0,0,0,0.12),
+    0 4px 8px rgba(0,0,0,0.14);
+}
+
