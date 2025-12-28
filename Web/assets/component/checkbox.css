@@ -1,0 +1,19 @@
+/* ===============================
+   Material Checkbox
+================================ */
+.md-checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--md-sys-color-primary);
+  cursor: pointer;
+}
+
+.md-checkbox:focus-visible {
+  outline: 2px solid var(--md-sys-color-secondary);
+  outline-offset: 2px;
+}
+
+.md-checkbox:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

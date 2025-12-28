@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>سبد خرید | Shocoland</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+  <nav class="navbar">
+    <div class="brand">Shocoland</div>
+
+    <!-- Cart Icon with Badge -->
+    <div class="badge-wrapper">
+      🛒
+      <span id="cartBadge" class="md-badge large">0</span>
+    </div>
+  </nav>
+</header>
+
+<!-- Main -->
+<main class="container">
+  <h1>محصولات</h1>
+
+  <button class="md-btn btn-round hoverable pressable" onclick="addToCart()">
+    افزودن شکلات تلخ
+  </button>
+
+  <br><br>
+
+  <button class="md-btn btn-round hoverable pressable" onclick="addToCart()">
+    افزودن شکلات شیری
+  </button>
+</main>
+
+<script src="../assets/js/badge.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+/* ===============================
+   Material Text Field (Outlined)
+================================ */
+.md-textfield {
+  margin-bottom: 20px;
+}
+
+.md-textfield label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.md-textfield input,
+.md-textfield textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1.5px solid var(--md-sys-color-outline);
+  background-color: transparent;
+  font-size: 14px;
+  box-sizing: border-box;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.md-textfield input:focus,
+.md-textfield textarea:focus {
+  border-color: var(--md-sys-color-primary);
+}
+
+.md-textfield input:disabled,
+.md-textfield textarea:disabled {
+  opacity: 0.5;
+}

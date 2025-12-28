@@ -5,14 +5,17 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 20px;
   font-family: inherit;
-  font-weight: 500;
-  border-radius: 999px; /* Fully Rounded */
-  border: none;
+  font-size: 14px;
   cursor: pointer;
-  text-decoration: none;
-  line-height: 1;
-  transition: background-color 0.3s, box-shadow 0.3s;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  transition:
+    background-color 0.3s,
+    box-shadow 0.3s,
+    transform 0.1s;
 }
 
 /* -------- Sizes -------- */
@@ -49,7 +52,27 @@
 .md-btn.filled {
   background-color: var(--md-sys-color-primary);
   color: var(--md-sys-color-surface-container-lowest);
+  font-weight: 500;
+  line-height: 1.25rem;
+  width: 100%;
 }
+
+.md-btn.filled:hover {
+  background-color: color-mix(in srgb, var(--md-sys-color-primary) 90%, black);
+}
+
+.md-btn.filled:focus {
+  outline: 2px solid var(--md-sys-color-outline);
+  outline-offset: 2px;
+}
+
+.md-btn.filled:disabled {
+  background-color: var(--md-sys-color-surface-container-high);
+  color: var(--md-sys-color-on-surface);
+  opacity: 0.38;
+  cursor: not-allowed;
+}
+
 
 .md-btn.outlined {
   background-color: transparent;
@@ -66,12 +89,99 @@
   background-color: var(--md-sys-color-surface-container-low);
   color: var(--md-sys-color-primary);
   box-shadow:
-    0 1px 3px rgba(0,0,0,0.12),
-    0 1px 2px rgba(0,0,0,0.24);
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .md-btn.text {
   background-color: transparent;
   color: var(--md-sys-color-primary);
   padding: 0 12px;
+}
+
+.btn-round {
+  border-radius: 999px;
+}
+
+.btn-square {
+  border-radius: 6px;
+}
+
+.md-btn.hoverable:hover {
+  background-color: var(--md-sys-color-primary-container);
+}
+
+.md-btn.focusable:focus-visible {
+  box-shadow: 0 0 0 3px var(--md-sys-color-secondary);
+}
+
+.md-btn.pressable:active {
+  transform: scale(0.97);
+  box-shadow: none;
+}
+
+.md-btn.disabled,
+.md-btn:disabled {
+  background-color: var(--md-sys-color-surface-variant);
+  color: var(--md-sys-color-on-surface-variant);
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.6;
+}
+
+/* ===============================
+   Material Icon Button
+================================ */
+.md-icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--md-sys-color-primary);
+  transition: background-color 0.3s;
+}
+
+.md-icon-btn:hover {
+  background-color: var(--md-sys-color-surface-container);
+}
+
+.md-icon-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--md-sys-color-secondary);
+}
+
+.md-icon-btn:active {
+  background-color: var(--md-sys-color-surface-container-high);
+}
+
+/* ===============================
+   Material FAB
+================================ */
+.md-fab {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.md-fab:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+}
+
+.md-fab:active {
+  transform: scale(0.95);
 }

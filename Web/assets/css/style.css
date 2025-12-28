@@ -1,6 +1,11 @@
 @import url(light.css);
 @import url(../component/button.css);
 @import url(../component/card.css);
+@import url(../component/table.css);
+@import url(../component/checkbox.css);
+@import url(../component/radio.css);
+@import url(../component/textfield.css);
+@import url(../component/products.css);
 
 :root {
     direction: rtl;
@@ -52,12 +57,7 @@ h3 {
     color: var(--md-sys-color-primary);
 }
 
-input[type="radio"] {
-    display: inline-block;
-    width: auto;
-}
-
-
+/*
 label {
     display: block;
     margin-bottom: 6px;
@@ -76,6 +76,7 @@ textarea {
     box-sizing: border-box;
     resize: vertical;
 }
+*/
 
 /*
 
@@ -164,84 +165,43 @@ p {
     color: var(--navbar-hover);
 }
 
-/* ---------------------------- */
-/*   Primary Filled Button (Small)
-     Material 3 – Enabled State
-/* ---------------------------- */
 
-.btn-primary-filled {
-    background-color: var(--md-sys-color-primary);
-    color: var(--md-sys-color-surface-container-lowest);
-    width: 100%;
-    font-family: inherit;
-    font-size: 0.875rem;
-    /* small */
-    font-weight: 500;
-    line-height: 1.25rem;
-
-    padding: 6px 16px;
-    /* small size */
-    border-radius: 8px;
-    border: none;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* Hover */
-.btn-primary-filled:hover {
-    background-color: color-mix(in srgb, var(--md-sys-color-primary) 90%, black);
-}
-
-/* Focus */
-.btn-primary-filled:focus {
-    outline: 2px solid var(--md-sys-color-outline);
-    outline-offset: 2px;
-}
-
-/* Disabled */
-.btn-primary-filled:disabled,
-.btn-primary-filled.disabled {
-    background-color: var(--md-sys-color-surface-container-high);
-    color: var(--md-sys-color-on-surface);
-    opacity: 0.38;
-    cursor: not-allowed;
-}
 
 /* ===============================
-   Product Grid
+   Material Badge
 ================================ */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
+
+/* Wrapper for icon */
+.badge-wrapper {
+    position: relative;
+    display: inline-block;
 }
 
-.product-card {
-  text-align: center;
+/* Base badge */
+.md-badge {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background-color: var(--md-sys-color-error);
+    color: var(--md-sys-color-on-error);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
 }
 
-.product-card h3 {
-  margin-bottom: 8px;
+/* Small badge (dot only) */
+.md-badge.small {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
 }
 
-.product-card p {
-  font-size: 13px;
-  margin-bottom: 12px;
+/* Large badge (with number) */
+.md-badge.large {
+    min-width: 20px;
+    height: 20px;
+    padding: 0 6px;
+    font-size: 11px;
+    border-radius: 999px;
 }
-
-.product-card .price {
-  display: block;
-  margin-bottom: 12px;
-  font-weight: bold;
-  color: var(--md-sys-color-primary);
-}
-
-

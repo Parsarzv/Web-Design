@@ -10,7 +10,8 @@
 <body>
   <header>
     <nav class="navbar">
-      <div class="brand"><img src="../assets/Images/photo_2025-11-16_18-24-06-removebg-preview (1).png" alt="Chocolate Logo"></div>
+      <div class="brand"><img src="../assets/Images/photo_2025-11-16_18-24-06-removebg-preview (1).png"
+          alt="Chocolate Logo"></div>
       <ul class="nav-links">
         <li><a href="index.html">خانه</a></li>
         <li><a href="products.html">محصولات</a></li>
@@ -24,21 +25,26 @@
 
   <main>
     <section class="container">
-      <h2>اطلاعات تحویل</h2>
+      <h1>اطلاعات تحویل</h1>
       <form>
-        <label>آدرس تحویل:</label>
-        <textarea placeholder="مثلاً: تهران، خیابان آزادی، پلاک ۱۲۳" required></textarea>
+        <div class="md-textfield">
+          <label>آدرس تحویل:</label>
+          <textarea placeholder="مثلاً: تهران، خیابان آزادی، پلاک ۱۲۳" required></textarea>
+        </div>
+        <div class="md-textfield">
+          <label>روش تحویل:</label>
+          <select>
+            <option>ارسال به درب منزل</option>
+            <option>تحویل در فروشگاه</option>
+          </select>
+        </div>
+        <div class="md-textfield">
 
-        <label>روش تحویل:</label>
-        <select>
-          <option>ارسال به درب منزل</option>
-          <option>تحویل در فروشگاه</option>
-        </select>
+          <label>تاریخ تحویل:</label>
+          <input type="date" required>
+        </div>
 
-        <label>تاریخ تحویل:</label>
-        <input type="date" required>
-
-        <button class="btn-primary-filled" type="submit" onclick="location.href='payment.html'">ادامه به پرداخت</button>
+        <button class="md-btn filled" type="submit" onclick="location.href='payment.html'">ادامه به پرداخت</button>
       </form>
     </section>
   </main>

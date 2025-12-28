@@ -12,13 +12,16 @@
         <section class="container">
             <h1>بازیابی رمز عبور</h1>
             <form>
-                <label for="newpass">رمز عبور جدید:</label>
-                <input type="password" id="newpass" name="newpass" placeholder="رمز جدید را وارد کنید" required>
+                <div class="md-textfield">
+                    <label for="newpass">رمز عبور جدید:</label>
+                    <input type="password" id="newpass" name="newpass" placeholder="رمز جدید را وارد کنید" required>
+                </div>
+                <div class="md-textfield">
+                    <label for="confirm">تکرار رمز عبور:</label>
+                    <input type="password" id="confirm" name="confirm" placeholder="رمز را دوباره وارد کنید" required>
+                </div>
 
-                <label for="confirm">تکرار رمز عبور:</label>
-                <input type="password" id="confirm" name="confirm" placeholder="رمز را دوباره وارد کنید" required>
-
-                <button class="btn-primary-filled" type="submit">ذخیره رمز جدید</button>
+                <button class="md-btn filled" type="submit">ذخیره رمز جدید</button>
 
                 <p><a href="login.html">بازگشت به صفحه ورود</a></p>
             </form>
