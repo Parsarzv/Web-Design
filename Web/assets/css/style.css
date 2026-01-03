@@ -6,6 +6,7 @@
 @import url(../component/radio.css);
 @import url(../component/textfield.css);
 @import url(../component/products.css);
+@import url(../component/switch.css);
 
 :root {
     direction: rtl;

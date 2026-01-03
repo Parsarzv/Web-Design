@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <title>محصولات | Shocoland</title>
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
@@ -12,7 +14,8 @@
   <!-- Navbar -->
   <header>
     <nav class="navbar">
-      <div class="brand"><img src="../assets/Images/photo_2025-11-16_18-24-06-removebg-preview (1).png" alt="Chocolate Logo"></div>
+      <div class="brand"><img src="../assets/Images/photo_2025-11-16_18-24-06-removebg-preview (1).png"
+          alt="Chocolate Logo"></div>
       <ul class="nav-links">
         <li><a href="index.html">خانه</a></li>
         <li><a href="products.html">محصولات</a></li>
@@ -34,38 +37,119 @@
 
       <!-- Card 1 -->
       <div class="md-card elevated product-card">
-        <h3>شکلات تلخ بلژیکی</h3>
+        <h2>شکلات تلخ بلژیکی</h2>
         <p>٪۷۰ کاکائو، وارداتی از بلژیک</p>
         <span class="price">۲۸۵٬۰۰۰ تومان</span>
         <button class="md-btn filled small">افزودن به سبد</button>
+        <button class="md-icon-btn" onclick="toggleFavorite(this)">
+          🤍
+        </button>
+        <div class="rating">
+          <button class="md-icon-btn star" data-value="1">
+            <span class="material-icons">star_border</span>
+          </button>
+          <button class="md-icon-btn star" data-value="2">
+            <span class="material-icons">star_border</span>
+          </button>
+          <button class="md-icon-btn star" data-value="3">
+            <span class="material-icons">star_border</span>
+          </button>
+          <button class="md-icon-btn star" data-value="4">
+            <span class="material-icons">star_border</span>
+          </button>
+          <button class="md-icon-btn star" data-value="5">
+            <span class="material-icons">star_border</span>
+          </button>
+        </div>
       </div>
 
       <!-- Card 2 -->
       <div class="md-card elevated product-card">
-        <h3>شکلات شیری سوئیسی</h3>
+        <h2>شکلات شیری سوئیسی</h2>
         <p>طعم ملایم با شیر طبیعی آلپ</p>
         <span class="price">۲۴۰٬۰۰۰ تومان</span>
         <button class="md-btn filled small">افزودن به سبد</button>
+        <button class="md-icon-btn" onclick="toggleFavorite(this)">
+          🤍
+        </button>
+        <div class="rating">
+          <button class="md-icon-btn star" data-value="1">
+            <span class="material-icons">star_border</span>
+          </button>
+          <button class="md-icon-btn star" data-value="2">
+            <span class="material-icons">star_border</span>
+          </button>
+          <button class="md-icon-btn star" data-value="3">
+            <span class="material-icons">star_border</span>
+          </button>
+          <button class="md-icon-btn star" data-value="4">
+            <span class="material-icons">star_border</span>
+          </button>
+          <button class="md-icon-btn star" data-value="5">
+            <span class="material-icons">star_border</span>
+          </button>
+        </div>
       </div>
 
       <!-- Card 3 -->
       <div class="md-card elevated product-card">
-        <h3>شکلات فندقی ایتالیایی</h3>
+        <h2>شکلات فندقی ایتالیایی</h2>
         <p>حاوی فندق تازه و کرم شکلات</p>
         <span class="price">۳۲۰٬۰۰۰ تومان</span>
         <button class="md-btn filled small">افزودن به سبد</button>
+        <button class="md-icon-btn" onclick="toggleFavorite(this)">
+          🤍
+        </button>
+        <div class="rating">
+          <button class="md-icon-btn star" data-value="1">
+            <span class="material-icons">star_border</span>
+          </button>
+          <button class="md-icon-btn star" data-value="2">
+            <span class="material-icons">star_border</span>
+          </button>
+          <button class="md-icon-btn star" data-value="3">
+            <span class="material-icons">star_border</span>
+          </button>
+          <button class="md-icon-btn star" data-value="4">
+            <span class="material-icons">star_border</span>
+          </button>
+          <button class="md-icon-btn star" data-value="5">
+            <span class="material-icons">star_border</span>
+          </button>
+        </div>
       </div>
 
       <!-- Card 4 -->
       <div class="md-card elevated product-card">
-        <h3>شکلات هدیه لوکس</h3>
+        <h2>شکلات هدیه لوکس</h2>
         <p>بسته‌بندی خاص مناسب هدیه</p>
         <span class="price">۴۸۰٬۰۰۰ تومان</span>
         <button class="md-btn filled small">افزودن به سبد</button>
+        <button class="md-icon-btn" onclick="toggleFavorite(this)">
+          🤍
+        </button>
+        <div class="rating">
+          <button class="md-icon-btn star" data-value="1">
+            <span class="material-icons">star_border</span>
+          </button>
+          <button class="md-icon-btn star" data-value="2">
+            <span class="material-icons">star_border</span>
+          </button>
+          <button class="md-icon-btn star" data-value="3">
+            <span class="material-icons">star_border</span>
+          </button>
+          <button class="md-icon-btn star" data-value="4">
+            <span class="material-icons">star_border</span>
+          </button>
+          <button class="md-icon-btn star" data-value="5">
+            <span class="material-icons">star_border</span>
+          </button>
+        </div>
       </div>
 
     </section>
   </main>
-
+  <script src="../assets/js/like_star_btn.js"></script>
 </body>
+
 </html>
