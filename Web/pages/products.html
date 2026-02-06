@@ -24,6 +24,12 @@
         <li><a href="../auth/login.html">ورود</a></li>
         <li><a href="../auth/signup.html">ثبت‌نام</a></li>
       </ul>
+
+      <!-- Cart Icon with Badge -->
+      <div class="badge-wrapper">
+        🛒
+        <span id="cartBadge" class="md-badge large">0</span>
+      </div>
     </nav>
   </header>
 
@@ -32,15 +38,34 @@
     <h1>محصولات Shocoland</h1>
     <p>منتخبی از بهترین شکلات‌های وارداتی و خاص</p>
 
+
+    <!-- Filters & Sort -->
+    <section class="filters-bar">
+      <input type="text" class="md-textfield" placeholder="جستجو محصول...">
+
+      <select class="md-textfield">
+        <option>مرتب‌سازی</option>
+        <option>قیمت (کم → زیاد)</option>
+        <option>قیمت (زیاد → کم)</option>
+        <option>امتیاز کاربران</option>
+      </select>
+
+      <a href="#" class="filter-link">🔥 پرفروش‌ها</a>
+    </section>
+
+
     <!-- Grid -->
     <section class="product-grid">
 
       <!-- Card 1 -->
-      <div class="md-card elevated product-card">
+      <div class="md-card elevated product-card star-card">
         <h2>شکلات تلخ بلژیکی</h2>
         <p>٪۷۰ کاکائو، وارداتی از بلژیک</p>
         <span class="price">۲۸۵٬۰۰۰ تومان</span>
-        <button class="md-btn filled small">افزودن به سبد</button>
+        <button class="md-btn filled btn-round hoverable pressable" onclick="addToCart()">
+          افزودن به سبد خرید
+        </button>
+
         <button class="md-icon-btn" onclick="toggleFavorite(this)">
           🤍
         </button>
@@ -64,11 +89,14 @@
       </div>
 
       <!-- Card 2 -->
-      <div class="md-card elevated product-card">
+      <div class="md-card elevated product-card star-card">
         <h2>شکلات شیری سوئیسی</h2>
         <p>طعم ملایم با شیر طبیعی آلپ</p>
         <span class="price">۲۴۰٬۰۰۰ تومان</span>
-        <button class="md-btn filled small">افزودن به سبد</button>
+        <button class="md-btn filled btn-round hoverable pressable" onclick="addToCart()">
+          افزودن به سبد خرید
+        </button>
+
         <button class="md-icon-btn" onclick="toggleFavorite(this)">
           🤍
         </button>
@@ -92,11 +120,14 @@
       </div>
 
       <!-- Card 3 -->
-      <div class="md-card elevated product-card">
+      <div class="md-card elevated product-card star-card">
         <h2>شکلات فندقی ایتالیایی</h2>
         <p>حاوی فندق تازه و کرم شکلات</p>
         <span class="price">۳۲۰٬۰۰۰ تومان</span>
-        <button class="md-btn filled small">افزودن به سبد</button>
+        <button class="md-btn filled btn-round hoverable pressable" onclick="addToCart()">
+          افزودن به سبد خرید
+        </button>
+
         <button class="md-icon-btn" onclick="toggleFavorite(this)">
           🤍
         </button>
@@ -120,11 +151,14 @@
       </div>
 
       <!-- Card 4 -->
-      <div class="md-card elevated product-card">
+      <div class="md-card elevated product-card star-card">
         <h2>شکلات هدیه لوکس</h2>
         <p>بسته‌بندی خاص مناسب هدیه</p>
         <span class="price">۴۸۰٬۰۰۰ تومان</span>
-        <button class="md-btn filled small">افزودن به سبد</button>
+        <button class="md-btn filled btn-round hoverable pressable" onclick="addToCart()">
+          افزودن به سبد خرید
+        </button>
+
         <button class="md-icon-btn" onclick="toggleFavorite(this)">
           🤍
         </button>
@@ -148,8 +182,11 @@
       </div>
 
     </section>
+    <footer>© 2025 Shocoland — همه حقوق محفوظ است.</footer>
+
   </main>
   <script src="../assets/js/like_star_btn.js"></script>
+  <script src="../assets/js/badge.js"></script>
 </body>
 
 </html>

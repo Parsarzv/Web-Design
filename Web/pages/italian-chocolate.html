@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جزئیات محصول | Shocoland</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="brand"><img src="../assets/Images/photo_2025-11-16_18-24-06-removebg-preview (1).png"
+                    alt="Chocolate Logo"></div>
+            <ul class="nav-links">
+                <li><a href="index.html">خانه</a></li>
+                <li><a href="products.html">محصولات</a></li>
+                <li><a href="about.html">درباره ما</a></li>
+                <li><a href="contact.html">تماس با ما</a></li>
+                <li><a href="../auth/login.html">ورود</a></li>
+                <li><a href="../auth/signup.html">ثبت‌نام</a></li>
+            </ul>
+
+            <!-- Cart Icon with Badge -->
+            <div class="badge-wrapper">
+                🛒
+                <span id="cartBadge" class="md-badge large">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container product-page">
+
+        <!-- Product Main -->
+        <section class="md-card elevated product-main">
+
+            <div class="product-gallery">
+                <img src="../assets/images/choco-main.jpg" alt="شکلات تلخ">
+
+                <div class="product-thumbs">
+                    <img src="../assets/images/choco-1.jpg">
+                    <img src="../assets/images/choco-2.jpg">
+                    <img src="../assets/images/choco-3.jpg">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h1>شکلات فندقی ایتالیایی</h1>
+
+                <!-- Rating -->
+                <div class="rating" data-rating="4">
+                    <span class="star">☆</span>
+                    <span class="star">☆</span>
+                    <span class="star">☆</span>
+                    <span class="star">☆</span>
+                    <span class="star">☆</span>
+                    <span class="rating-value">(4.0)</span>
+                </div>
+
+                <p class="product-description">
+                    ترکیبی بی‌نظیر از شکلات مرغوب و فندق برشته‌شده ایتالیایی.
+                </p>
+
+                <div class="price">۳۰۰٬۰۰۰ تومان</div>
+
+                <button class="md-btn filled btn-round hoverable pressable" onclick="addToCart()">
+                    افزودن به سبد خرید
+                </button>
+            </div>
+
+        </section>
+
+        <!-- Reviews -->
+        <section class="md-card filled">
+            <h2>نظرات کاربران</h2>
+
+            <div class="review-item">
+                <strong>رضا محمدی</strong>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>ترکیب فندق و شکلاتش عالیه، خیلی تازه بود.</p>
+            </div>
+
+            <div class="review-item">
+                <strong>نرگس اکبری</strong>
+                <p>⭐⭐⭐⭐☆</p>
+                <p>طعمش خیلی خوبه، فقط کاش فندقش بیشتر بود 😄</p>
+            </div>
+
+            <div class="review-item">
+                <strong>امیرحسین رستمی</strong>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>یکی از بهترین شکلات‌های فندقی که خوردم.</p>
+            </div>
+        </section>
+
+
+        <!-- Add Review -->
+        <section class="md-card outlined review-form">
+            <h2>ثبت نظر</h2>
+            <div class="product-card">
+                <div class="rating star-card">
+                    <button class="md-icon-btn star" data-value="1">
+                        <span class="material-icons">star_border</span>
+                    </button>
+                    <button class="md-icon-btn star" data-value="2">
+                        <span class="material-icons">star_border</span>
+                    </button>
+                    <button class="md-icon-btn star" data-value="3">
+                        <span class="material-icons">star_border</span>
+                    </button>
+                    <button class="md-icon-btn star" data-value="4">
+                        <span class="material-icons">star_border</span>
+                    </button>
+                    <button class="md-icon-btn star" data-value="5">
+                        <span class="material-icons">star_border</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="md-textfield">
+                <textarea class="md-textfield" placeholder="نظر خود را بنویسید..."></textarea>
+            </div>
+            <button class="md-btn filled" type="submit"> ارسال نظر </button>
+        </section>
+
+        <!-- Related Products -->
+        <section>
+            <h2>محصولات مرتبط</h2>
+
+            <div class="product-grid">
+                <a href="switzerland-chocolate.html" class="md-btn filled small">شکلات شیری سوئیسی</a>
+                <a href="belgium-chocolate.html" class="md-btn filled small">شکلات فندقی بلژیکی</a>
+                <a href="luxury-chocolate.html" class="md-btn filled small">شکلات هدیه لوکس</a>
+            </div>
+
+            <footer>© 2025 Shocoland — همه حقوق محفوظ است.</footer>
+        </section>
+
+    </main>
+    <script src="../assets/js/like_star_btn.js"></script>
+    <script src="../assets/js/badge.js"></script>
+</body>
+
+</html>

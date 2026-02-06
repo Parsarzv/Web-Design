@@ -9,22 +9,23 @@ function toggleFavorite(btn) {
 }
 
 
-const stars = document.querySelectorAll('.rating .star');
+document.querySelectorAll('.star-card').forEach(card => {
+  const stars = card.querySelectorAll('.star');
 
-stars.forEach(star => {
-  star.addEventListener('click', () => {
-    const value = star.getAttribute('data-value');
+  stars.forEach(star => {
+    star.addEventListener('click', () => {
+      const value = parseInt(star.dataset.value);
 
-    stars.forEach(s => {
-      const icon = s.querySelector('.material-icons');
-      if (s.getAttribute('data-value') <= value) {
-        s.classList.add('active');
-        icon.textContent = 'star';
-      } else {
-        s.classList.remove('active');
-        icon.textContent = 'star_border';
-      }
+      stars.forEach(s => {
+        const icon = s.querySelector('.material-icons');
+        if (parseInt(s.dataset.value) <= value) {
+          icon.textContent = 'star';
+          icon.style.color = '#FFD700';
+        } else {
+          icon.textContent = 'star_border';
+          icon.style.color = '';
+        }
+      });
     });
   });
 });
-

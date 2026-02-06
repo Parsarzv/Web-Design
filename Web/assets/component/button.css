@@ -109,6 +109,7 @@
 
 .md-btn.hoverable:hover {
   background-color: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-surface);
 }
 
 .md-btn.focusable:focus-visible {
@@ -196,6 +197,8 @@
 
 .rating {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 4px;
 }
 
@@ -205,4 +208,4 @@
 
 .rating .star.active {
   color: gold;
-}
+};

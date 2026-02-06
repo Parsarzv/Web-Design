@@ -9,35 +9,40 @@
 
 <body>
 
-<!-- Header -->
-<header>
-  <nav class="navbar">
-    <div class="brand">Shocoland</div>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="brand"><img src="../assets/Images/photo_2025-11-16_18-24-06-removebg-preview (1).png"
+          alt="Chocolate Logo"></div>
+      <ul class="nav-links">
+        <li><a href="index.html">خانه</a></li>
+        <li><a href="products.html">محصولات</a></li>
+        <li><a href="about.html">درباره ما</a></li>
+        <li><a href="contact.html">تماس با ما</a></li>
+        <li><a href="../auth/login.html">ورود</a></li>
+        <li><a href="../auth/signup.html">ثبت‌نام</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Cart Icon with Badge -->
-    <div class="badge-wrapper">
-      🛒
-      <span id="cartBadge" class="md-badge large">0</span>
-    </div>
-  </nav>
-</header>
+  <!-- Main -->
+  <main class="container">
+    <h1>محصولات</h1>
 
-<!-- Main -->
-<main class="container">
-  <h1>محصولات</h1>
+    <button class="md-btn btn-round hoverable pressable" onclick="addToCart()">
+      افزودن شکلات تلخ
+    </button>
 
-  <button class="md-btn btn-round hoverable pressable" onclick="addToCart()">
-    افزودن شکلات تلخ
-  </button>
 
-  <br><br>
+    <button class="md-btn btn-round hoverable pressable" onclick="addToCart()">
+      افزودن شکلات شیری
+    </button>
+    <footer>© 2025 Shocoland — همه حقوق محفوظ است.</footer>
+    
+  </main>
 
-  <button class="md-btn btn-round hoverable pressable" onclick="addToCart()">
-    افزودن شکلات شیری
-  </button>
-</main>
-
-<script src="../assets/js/badge.js"></script>
+  <script src="../assets/js/badge.js"></script>
 
 </body>
+
 </html>

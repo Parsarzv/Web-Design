@@ -7,6 +7,7 @@
 @import url(../component/textfield.css);
 @import url(../component/products.css);
 @import url(../component/switch.css);
+@import url(../component/one_product.css);
 
 :root {
     direction: rtl;
@@ -206,3 +207,60 @@ p {
     font-size: 11px;
     border-radius: 999px;
 }
+
+/* ===============================
+   Filters & Sort Bar
+================================ */
+.filters-bar {
+    display: grid;
+    grid-template-columns: 1fr 220px auto;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 32px;
+    padding: 16px 20px;
+    border-radius: 16px;
+    background-color: var(--md-sys-color-surface-container);
+}
+
+/* استفاده از textfield موجود */
+.filters-bar .md-textfield {
+    height: 40px;
+    border-radius: 999px;
+    padding-inline: 16px;
+    font-family: inherit;
+}
+
+/* لینک پرفروش‌ها */
+.filter-link {
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background-color: var(--md-sys-color-primary-container);
+    color: var(--md-sys-color-on-primary-container);
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.filter-link:hover {
+    background-color: var(--md-sys-color-primary-fixed-dim);
+}
+
+.filter-link:active {
+    transform: scale(0.96);
+}
+
+/* ===============================
+   Responsive
+================================ */
+@media (max-width: 768px) {
+    .filters-bar {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-link {
+        text-align: center;
+    }
+}
+
