@@ -1,0 +1,24 @@
+/* ===============================
+   Form Validation
+================================ */
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.error-message {
+    font-size: 12px;
+    color: var(--md-sys-color-error);
+    display: none;
+}
+
+.form-field.invalid .error-message {
+    display: block;
+}
+
+.form-field.invalid input {
+    border-color: var(--md-sys-color-error);
+}

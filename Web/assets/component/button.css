@@ -162,7 +162,7 @@
 
 /* ===============================
    Material FAB
-================================ */
+================================ 
 .md-fab {
   position: fixed;
   bottom: 24px;
@@ -194,6 +194,7 @@
 .favorite-btn.active {
   color: var(--md-sys-color-secondary);
 }
+*/
 
 .rating {
   display: flex;
@@ -208,4 +209,4 @@
 
 .rating .star.active {
   color: gold;
-};
+}

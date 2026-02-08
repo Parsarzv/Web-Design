@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>سبد خرید - Shocoland</title>
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
@@ -12,7 +13,22 @@
     <nav class="navbar">
       <div class="brand"><img src="../assets/Images/photo_2025-11-16_18-24-06-removebg-preview (1).png"
           alt="Chocolate Logo"></div>
-      <ul class="nav-links">
+      <!-- Hamburger Menu (Mobile) -->
+      <div class="hamburger-menu">
+        <span class="hamburger-icon">☰</span>
+
+        <ul class="hamburger-list">
+          <li><a href="index.html">خانه</a></li>
+          <li><a href="products.html">محصولات</a></li>
+          <li><a href="about.html">درباره ما</a></li>
+          <li><a href="contact.html">تماس با ما</a></li>
+          <li><a href="../auth/login.html">ورود</a></li>
+          <li><a href="../auth/signup.html">ثبت‌نام</a></li>
+        </ul>
+      </div>
+
+      <!-- Desktop Menu -->
+      <ul class="nav-links desktop-menu">
         <li><a href="index.html">خانه</a></li>
         <li><a href="products.html">محصولات</a></li>
         <li><a href="about.html">درباره ما</a></li>
@@ -20,6 +36,12 @@
         <li><a href="../auth/login.html">ورود</a></li>
         <li><a href="../auth/signup.html">ثبت‌نام</a></li>
       </ul>
+
+      <!-- Cart Icon with Badge -->
+      <div class="badge-wrapper">
+        🛒
+        <span id="cartBadge" class="md-badge large">0</span>
+      </div>
     </nav>
   </header>
 

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>جزئیات محصول | Shocoland</title>
 
@@ -18,7 +19,22 @@
         <nav class="navbar">
             <div class="brand"><img src="../assets/Images/photo_2025-11-16_18-24-06-removebg-preview (1).png"
                     alt="Chocolate Logo"></div>
-            <ul class="nav-links">
+            <!-- Hamburger Menu (Mobile) -->
+            <div class="hamburger-menu">
+                <span class="hamburger-icon">☰</span>
+
+                <ul class="hamburger-list">
+                    <li><a href="index.html">خانه</a></li>
+                    <li><a href="products.html">محصولات</a></li>
+                    <li><a href="about.html">درباره ما</a></li>
+                    <li><a href="contact.html">تماس با ما</a></li>
+                    <li><a href="../auth/login.html">ورود</a></li>
+                    <li><a href="../auth/signup.html">ثبت‌نام</a></li>
+                </ul>
+            </div>
+
+            <!-- Desktop Menu -->
+            <ul class="nav-links desktop-menu">
                 <li><a href="index.html">خانه</a></li>
                 <li><a href="products.html">محصولات</a></li>
                 <li><a href="about.html">درباره ما</a></li>
@@ -41,7 +57,7 @@
         <section class="md-card elevated product-main">
 
             <div class="product-gallery">
-                <img src="../assets/images/choco-main.jpg" alt="شکلات تلخ">
+                <img src="../assets/images/choco-main.jpg" alt="شکلات شیری">
 
                 <div class="product-thumbs">
                     <img src="../assets/images/choco-1.jpg">

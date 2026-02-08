@@ -1,52 +1,90 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>لیست محصولات | ادمین</title>
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
 
-<main class="container" style="width:100%;max-width:1100px;">
-  <h1>لیست محصولات</h1>
+  <header>
+    <nav class="navbar">
+      <div class="brand"><img src="../assets/Images/photo_2025-11-16_18-24-06-removebg-preview (1).png"
+          alt="Chocolate Logo"></div>
+      <!-- Hamburger Menu (Mobile) -->
+      <div class="hamburger-menu">
+        <span class="hamburger-icon">☰</span>
 
-  <div class="md-table-wrapper">
-    <table class="md-table">
-      <thead>
-        <tr>
-          <th>تصویر</th>
-          <th>نام محصول</th>
-          <th>دسته‌بندی</th>
-          <th>قیمت</th>
-          <th>موجودی</th>
-          <th>وضعیت</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><img src="../assets/images/choco1.jpg" class="thumb"></td>
-          <td>شکلات تلخ بلژیکی</td>
-          <td>تلخ</td>
-          <td>۲۸۵٬۰۰۰</td>
-          <td>۱۲</td>
-          <td><span class="status active">فعال</span></td>
-        </tr>
-        <tr>
-          <td><img src="../assets/images/choco2.jpg" class="thumb"></td>
-          <td>شکلات شیری سوئیسی</td>
-          <td>شیری</td>
-          <td>۲۴۰٬۰۰۰</td>
-          <td>۰</td>
-          <td><span class="status inactive">ناموجود</span></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-      <footer>© 2025 Shocoland — همه حقوق محفوظ است.</footer>
+        <ul class="hamburger-list">
+          <li><a href="index.html">خانه</a></li>
+          <li><a href="products.html">محصولات</a></li>
+          <li><a href="about.html">درباره ما</a></li>
+          <li><a href="contact.html">تماس با ما</a></li>
+          <li><a href="../auth/login.html">ورود</a></li>
+          <li><a href="../auth/signup.html">ثبت‌نام</a></li>
+        </ul>
+      </div>
 
-</main>
+      <!-- Desktop Menu -->
+      <ul class="nav-links desktop-menu">
+        <li><a href="index.html">خانه</a></li>
+        <li><a href="products.html">محصولات</a></li>
+        <li><a href="about.html">درباره ما</a></li>
+        <li><a href="contact.html">تماس با ما</a></li>
+        <li><a href="../auth/login.html">ورود</a></li>
+        <li><a href="../auth/signup.html">ثبت‌نام</a></li>
+      </ul>
+
+      <!-- Cart Icon with Badge -->
+      <div class="badge-wrapper">
+        🛒
+        <span id="cartBadge" class="md-badge large">0</span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container" style="width:100%;max-width:1100px;">
+    <h1>لیست محصولات</h1>
+
+    <div class="md-table-wrapper">
+      <table class="md-table">
+        <thead>
+          <tr>
+            <th>تصویر</th>
+            <th>نام محصول</th>
+            <th>دسته‌بندی</th>
+            <th>قیمت</th>
+            <th>موجودی</th>
+            <th>وضعیت</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="../assets/images/choco1.jpg" class="thumb"></td>
+            <td>شکلات تلخ بلژیکی</td>
+            <td>تلخ</td>
+            <td>۲۸۵٬۰۰۰</td>
+            <td>۱۲</td>
+            <td><span class="status active">فعال</span></td>
+          </tr>
+          <tr>
+            <td><img src="../assets/images/choco2.jpg" class="thumb"></td>
+            <td>شکلات شیری سوئیسی</td>
+            <td>شیری</td>
+            <td>۲۴۰٬۰۰۰</td>
+            <td>۰</td>
+            <td><span class="status inactive">ناموجود</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <footer>© 2025 Shocoland — همه حقوق محفوظ است.</footer>
+
+  </main>
 
 </body>
+
 </html>

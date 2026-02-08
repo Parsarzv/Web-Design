@@ -3,28 +3,51 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>بازیابی رمز عبور</title>
     <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 
 <body>
-     <header>
-    <nav class="navbar">
-      <div class="brand"><img src="../assets/Images/photo_2025-11-16_18-24-06-removebg-preview (1).png" alt="Chocolate Logo"></div>
-      <ul class="nav-links">
-        <li><a href="index.html">خانه</a></li>
-        <li><a href="products.html">محصولات</a></li>
-        <li><a href="about.html">درباره ما</a></li>
-        <li><a href="contact.html">تماس با ما</a></li>
-        <li><a href="../auth/login.html">ورود</a></li>
-        <li><a href="../auth/signup.html">ثبت‌نام</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav class="navbar">
+            <div class="brand"><img src="../assets/Images/photo_2025-11-16_18-24-06-removebg-preview (1).png"
+                    alt="Chocolate Logo"></div>
+            <!-- Hamburger Menu (Mobile) -->
+            <div class="hamburger-menu">
+                <span class="hamburger-icon">☰</span>
+
+                <ul class="hamburger-list">
+                    <li><a href="index.html">خانه</a></li>
+                    <li><a href="products.html">محصولات</a></li>
+                    <li><a href="about.html">درباره ما</a></li>
+                    <li><a href="contact.html">تماس با ما</a></li>
+                    <li><a href="../auth/login.html">ورود</a></li>
+                    <li><a href="../auth/signup.html">ثبت‌نام</a></li>
+                </ul>
+            </div>
+
+            <!-- Desktop Menu -->
+            <ul class="nav-links desktop-menu">
+                <li><a href="index.html">خانه</a></li>
+                <li><a href="products.html">محصولات</a></li>
+                <li><a href="about.html">درباره ما</a></li>
+                <li><a href="contact.html">تماس با ما</a></li>
+                <li><a href="../auth/login.html">ورود</a></li>
+                <li><a href="../auth/signup.html">ثبت‌نام</a></li>
+            </ul>
+
+            <!-- Cart Icon with Badge -->
+            <div class="badge-wrapper">
+                🛒
+                <span id="cartBadge" class="md-badge large">0</span>
+            </div>
+        </nav>
+    </header>
     <main>
         <section class="container">
             <h1>بازیابی رمز عبور</h1>
-            <form>
+            <form class="validation">
                 <div class="md-textfield">
                     <label for="newpass">رمز عبور جدید:</label>
                     <input type="password" id="newpass" name="newpass" placeholder="رمز جدید را وارد کنید" required>
@@ -40,6 +63,8 @@
             </form>
         </section>
     </main>
+    <script src="../assets/js/form_validation.js"></script>
+
 </body>
 
 </html>
